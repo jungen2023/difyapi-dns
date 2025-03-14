@@ -15,11 +15,11 @@
 
 #### 使用说明
 
-systemctl daemon-reload #每次修改配置后请执行
-systemctl enable|disable|is-enabled difyapi-dns.service #启动|停止|查看服务开机自启动
-systemctl start|stop|status difyapi-dns.service #启动|停止|查看服务
-systemctl enable|disable|is-enabled difyapi-dns.timer #启动|停止|查看定时器开机自启动
-systemctl start|stop|status difyapi-dns.timer #启动|停止|查看定时器
+1.  systemctl daemon-reload #每次修改配置后请执行
+2.  systemctl enable|disable|is-enabled difyapi-dns.service #启动|停止|查看服务开机自启动
+3.  systemctl start|stop|status difyapi-dns.service #启动|停止|查看服务
+4.  systemctl enable|disable|is-enabled difyapi-dns.timer #启动|停止|查看定时器开机自启动
+5.  systemctl start|stop|status difyapi-dns.timer #启动|停止|查看定时器
 
 #### 参与贡献
 
