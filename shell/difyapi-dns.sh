@@ -13,7 +13,7 @@ if [ -z "${web}" ];then
 else
    webd_ip=`awk '/web/{print $1}' /etc/hosts`
    if [[ "${webd_ip}" != "${web_ip}" ]];then
-      sed -i "s/${webd_ip}/${web_ip}/g" /etc/hosts
+      sed -i "/web/s/${webd_ip}/${web_ip}/g" /etc/hosts
    fi
 fi
 
@@ -23,6 +23,6 @@ if [ -z "${api}" ];then
 else
    apid_ip=`awk '/api/{print $1}' /etc/hosts`
    if [[ "${apid_ip}" != "${api_ip}" ]];then
-      sed -i "s/${apid_ip}/${api_ip}/g" /etc/hosts
+      sed -i "/api/s/${apid_ip}/${api_ip}/g" /etc/hosts
    fi
 fi
